@@ -1,0 +1,91 @@
+// ----------------------------------------------------------------------------
+// HOMEWORK CHALLENGE 9
+// ----------------------------------------------------------------------------
+
+void main() {
+  // In Dart you are free to type or not to type the item of a list (list = array)
+
+  // here we don t type
+  List list1 = [
+    14,
+    "hello",
+    true,
+    [1, 2, 3]
+  ];
+
+  // here we type
+  List list2 = <int>[
+    14,
+    "hello",
+    true,
+    [1, 2, 3]
+  ];
+
+  // TODO Can you explain the compilation  problem, and fix it ?
+}
+
+
+// ----------------------------------------------------------------------------
+// HOMEWORK CHALLENGE 10
+// ----------------------------------------------------------------------------
+
+// TODO
+// Create a function 
+//		name 			listToString
+// 		parameters 		list<string> 	: a list of names
+//		return			a string with all students, starting with "<" ,ending with ">" , and separated by "-"
+
+// For example :
+//	listToString(["Dara","Bopha","Romdul","Chompey","Kalab"])  	return "<Dara - Bopha - Romdul - Chompey - Kalab>"
+
+void main() {
+  List students  =  <String>["Dara","Bopha","Romdul","Chompey","Kalab"];
+  
+  print(listToString(students));
+}
+
+// ----------------------------------------------------------------------------
+// HOMEWORK CHALLENGE 11
+// ----------------------------------------------------------------------------
+
+// TODO
+// Create a function 
+//		name 			isStudentInList
+// 		parameters 		list<string> 	: all student names
+//						string			: a student name
+//		return			true if the given student name belongs to the given list of students
+
+// For example :
+//	isStudentInList(["Dara","Bopha","Romdul","Chompey","Kalab"], "Ronan")  	return false
+//	isStudentInList(["Dara","Bopha","Romdul","Chompey","Kalab"], "Dara")  	return true
+
+// NOte : For this challenge we need the function listToString you have done previously
+void main() {
+  List students  =  <String>["Dara","Bopha","Romdul","Chompey","Kalab"];
+  
+  bool isRonanIsLIst = isStudentInList(students, "Ronan");
+  print("Ronan is " +  (isRonanIsLIst? "in " : "not in ") + " the list of students: " + listToString(students));
+  
+  bool isKalabIsLIst = isStudentInList(students, "Kalab");
+  print("Kalab is " +  (isKalabIsLIst? "in " : "not in ") + " the list of students: " + listToString(students));
+}
+
+// ----------------------------------------------------------------------------
+// HOMEWORK CHALLENGE 12
+// ----------------------------------------------------------------------------
+
+// TODO
+// Create a function 
+//		name :			calculateAvg
+// 		parameters 		list<double> 	:  a list of numbers
+//		return			double 			:  the average of all given numbers
+
+// For example :
+//  calculateAvg([80.0, 70.0, 55.5, 49.99, 67.0]) will return 64.498
+
+void main() {
+  List studentScore  =  <double>[80.0, 70.0, 55.5, 49.99, 67.0];
+ 
+  print(calculateAvg(students)); // output: 64.498
+}
+
