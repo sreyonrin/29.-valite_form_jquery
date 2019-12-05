@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header"><h3 class="text-center">Validation</h3></div>
+                    <div class="card-body">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" placeholder="Name" id="name" class="form-control border">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Age</label>
+                                <input type="text" placeholder="Age" id="age" class="form-control border" minlength="1" maxlength="3">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" placeholder="Nickname" id="nickname" class="form-control border">
+                            </div>
+                            <input type="button" id="button" class="btn btn-info btn-block" value="Login">
+                        </form>
+                    </div>
+                </div><br>
+                <div id="message"></div>
+                <!-- <div class="alert alert-success" style="display:none;"></div>
+                <div class="alert alert-danger"   style="display:none;"></div> -->
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/validate.js"></script>
+    
+</body>
+</html>
